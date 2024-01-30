@@ -90,7 +90,7 @@ Labels = [
     "non sarcastic"
 ]
 print("pred: ", pred)
-outLabels=[(labels[0] if (x > 0.5) else labels[1] ) for x in pred ]
+out = [(labels[0] if x[0] > 0.5 else labels[1]) for x in pred]
 
 print("---------------------------------------")
-print(outLabels)
+print(out)
